@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="1000" height="460" fill="#fcfcfb"/>
+
+  <text x="500" y="36" text-anchor="middle" font-size="20" font-weight="600" fill="#0b0b0b">アメリカン航空 成田-シカゴ線「復活」までの時系列</text>
+  <text x="500" y="58" text-anchor="middle" font-size="13" fill="#52514e">点の間隔は出来事の順序を表すもので、経過日数には比例していません</text>
+
+  <line x1="100" y1="230" x2="900" y2="230" stroke="#c3c2b7" stroke-width="2"/>
+
+  <!-- Event 0: 2020-01, AA (red), above -->
+  <line x1="100" y1="230" x2="100" y2="150" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="100" cy="230" r="8" fill="#e34948"/>
+  <text x="100" y="130" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">2020年1月</text>
+  <text x="100" y="150" text-anchor="middle" font-size="12" fill="#52514e">AA、運休</text>
+  <text x="100" y="166" text-anchor="middle" font-size="12" fill="#52514e">(コロナ禍拡大前)</text>
+
+  <!-- Event 1: 2025-05-31, JAL (blue), below -->
+  <line x1="233" y1="230" x2="233" y2="310" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="233" cy="230" r="8" fill="#2a78d6"/>
+  <text x="233" y="330" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">2025年5月31日</text>
+  <text x="233" y="350" text-anchor="middle" font-size="12" fill="#52514e">JAL、NRT-ORD線</text>
+  <text x="233" y="366" text-anchor="middle" font-size="12" fill="#52514e">先行復活</text>
+
+  <!-- Event 2: 2025-12-29, AA (red), above -->
+  <line x1="367" y1="230" x2="367" y2="150" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="367" cy="230" r="8" fill="#e34948"/>
+  <text x="367" y="130" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">2025年12月29日</text>
+  <text x="367" y="150" text-anchor="middle" font-size="12" fill="#52514e">AA、オヘア再投資</text>
+  <text x="367" y="166" text-anchor="middle" font-size="12" fill="#52514e">(100便/日追加等)発表</text>
+
+  <!-- Event 3: 2026-04-17, FAA (muted gray), below -->
+  <line x1="500" y1="230" x2="500" y2="310" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="500" cy="230" r="7" fill="#898781"/>
+  <text x="500" y="330" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">2026年4月17日</text>
+  <text x="500" y="350" text-anchor="middle" font-size="12" fill="#52514e">FAA、夏季便数制限</text>
+  <text x="500" y="366" text-anchor="middle" font-size="12" fill="#52514e">を発表(文脈情報)</text>
+
+  <!-- Event 4: 2026-05-14, United (aqua), above -->
+  <line x1="633" y1="230" x2="633" y2="150" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="633" cy="230" r="8" fill="#1baf7a"/>
+  <text x="633" y="130" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">2026年5月14日</text>
+  <text x="633" y="150" text-anchor="middle" font-size="12" fill="#52514e">ユナイテッド、</text>
+  <text x="633" y="166" text-anchor="middle" font-size="12" fill="#52514e">ORD-NRT新設発表</text>
+
+  <!-- Event 5: 2026-07-01, AA (red), below -->
+  <line x1="767" y1="230" x2="767" y2="310" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="767" cy="230" r="8" fill="#e34948"/>
+  <text x="767" y="330" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">2026年7月1日</text>
+  <text x="767" y="350" text-anchor="middle" font-size="12" fill="#52514e">AA、成田線復活</text>
+  <text x="767" y="366" text-anchor="middle" font-size="12" fill="#52514e">を発表</text>
+
+  <!-- Event 6: 2027-03-27, AA (red), above, larger -->
+  <line x1="900" y1="230" x2="900" y2="150" stroke="#e1e0d9" stroke-width="2"/>
+  <circle cx="900" cy="230" r="10" fill="#e34948" stroke="#0b0b0b" stroke-width="1.5"/>
+  <text x="900" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#0b0b0b">2027年3月27日</text>
+  <text x="900" y="150" text-anchor="middle" font-size="12" fill="#52514e">AA、就航開始</text>
+  <text x="900" y="166" text-anchor="middle" font-size="12" fill="#52514e">(予定)</text>
+
+  <!-- Legend -->
+  <g transform="translate(220,420)">
+    <circle cx="0" cy="0" r="7" fill="#2a78d6"/>
+    <text x="14" y="4" font-size="13" fill="#0b0b0b">JAL</text>
+    <circle cx="90" cy="0" r="7" fill="#e34948"/>
+    <text x="104" y="4" font-size="13" fill="#0b0b0b">アメリカン航空(AA)</text>
+    <circle cx="280" cy="0" r="7" fill="#1baf7a"/>
+    <text x="294" y="4" font-size="13" fill="#0b0b0b">ユナイテッド航空</text>
+    <circle cx="450" cy="0" r="7" fill="#898781"/>
+    <text x="464" y="4" font-size="13" fill="#0b0b0b">規制当局(FAA)</text>
+  </g>
+</svg>

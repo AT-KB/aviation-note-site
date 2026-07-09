@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="820" height="520" fill="#fcfcfb"/>
+
+  <text x="410" y="34" text-anchor="middle" font-size="20" font-weight="600" fill="#0b0b0b">IGアリーナ移転前後の比較(参考値)</text>
+
+  <!-- Panel 1: seat capacity -->
+  <text x="60" y="70" font-size="14" font-weight="700" fill="#0b0b0b">会場の最大収容人数と相撲興行の使用座席数</text>
+
+  <line x1="230" y1="90" x2="230" y2="200" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="480" y1="90" x2="480" y2="200" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="230" y1="200" x2="730" y2="200" stroke="#c3c2b7" stroke-width="2"/>
+  <text x="230" y="216" text-anchor="middle" font-size="11" fill="#898781">0</text>
+  <text x="480" y="216" text-anchor="middle" font-size="11" fill="#898781">10,000人</text>
+  <text x="730" y="216" text-anchor="middle" font-size="11" fill="#898781">20,000人</text>
+
+  <text x="220" y="112" text-anchor="end" font-size="13" font-weight="600" fill="#0b0b0b">IGアリーナ最大収容</text>
+  <rect x="230" y="98" width="425" height="26" fill="#94918a" rx="3"/>
+  <text x="667" y="116" font-size="13" font-weight="700" fill="#0b0b0b">17,000人</text>
+
+  <text x="220" y="152" text-anchor="end" font-size="13" font-weight="600" fill="#0b0b0b">相撲興行での使用席数</text>
+  <rect x="230" y="138" width="195" height="26" fill="#e34948" rx="3"/>
+  <text x="437" y="156" font-size="13" font-weight="700" fill="#0b0b0b">約7,800人</text>
+
+  <text x="220" y="192" text-anchor="end" font-size="13" font-weight="600" fill="#0b0b0b">旧・愛知県体育館(参考)</text>
+  <rect x="230" y="178" width="192" height="26" fill="#c3c2b7" rx="3"/>
+  <text x="434" y="196" font-size="13" font-weight="700" fill="#0b0b0b">ほぼ同水準</text>
+
+  <line x1="40" y1="248" x2="780" y2="248" stroke="#e1e0d9" stroke-width="1"/>
+
+  <!-- Panel 2: naming rights fee comparison -->
+  <text x="60" y="284" font-size="14" font-weight="700" fill="#0b0b0b">命名権契約額の比較(年額、報道ベースの参考値)</text>
+
+  <line x1="230" y1="304" x2="230" y2="460" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="480" y1="304" x2="480" y2="460" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="230" y1="460" x2="730" y2="460" stroke="#c3c2b7" stroke-width="2"/>
+  <text x="230" y="476" text-anchor="middle" font-size="11" fill="#898781">0円</text>
+  <text x="480" y="476" text-anchor="middle" font-size="11" fill="#898781">2.5億円</text>
+  <text x="730" y="476" text-anchor="middle" font-size="11" fill="#898781">5億円</text>
+
+  <text x="220" y="328" text-anchor="end" font-size="13" font-weight="600" fill="#0b0b0b">味の素スタジアム等</text>
+  <rect x="230" y="314" width="100" height="26" fill="#c3c2b7" rx="3"/>
+  <text x="342" y="332" font-size="13" font-weight="700" fill="#0b0b0b">約2億円</text>
+
+  <text x="220" y="368" text-anchor="end" font-size="13" font-weight="600" fill="#0b0b0b">ES CON FIELD HOKKAIDO</text>
+  <rect x="230" y="354" width="250" height="26" fill="#94918a" rx="3"/>
+  <text x="492" y="372" font-size="13" font-weight="700" fill="#0b0b0b">5億円以上</text>
+
+  <text x="220" y="408" text-anchor="end" font-size="13" font-weight="600" fill="#0b0b0b">IGアリーナ(推定)</text>
+  <rect x="230" y="394" width="270" height="26" fill="#e34948" rx="3"/>
+  <text x="512" y="412" font-size="13" font-weight="700" fill="#0b0b0b">5億円超と推測</text>
+
+  <text x="410" y="500" text-anchor="middle" font-size="12" fill="#898781">出典:住む街なび、日本経済新聞、Business Insider Japan(いずれも本文の出典を参照)。IGアリーナの正確な契約額は非公表。</text>
+</svg>

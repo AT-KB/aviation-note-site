@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="820" height="420" fill="#fcfcfb"/>
+
+  <text x="410" y="34" text-anchor="middle" font-size="20" font-weight="600" fill="#0b0b0b">7勝7敗で千秋楽を迎えた力士の勝率</text>
+  <text x="410" y="56" text-anchor="middle" font-size="13" fill="#52514e">Duggan &amp; Levitt (American Economic Review, 2002) の統計分析より</text>
+
+  <!-- gridlines / axis -->
+  <line x1="230" y1="80" x2="230" y2="360" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="480" y1="80" x2="480" y2="360" stroke="#e1e0d9" stroke-width="1"/>
+  <line x1="230" y1="360" x2="730" y2="360" stroke="#c3c2b7" stroke-width="2"/>
+  <text x="230" y="378" text-anchor="middle" font-size="12" fill="#898781">0%</text>
+  <text x="480" y="378" text-anchor="middle" font-size="12" fill="#898781">50%</text>
+  <text x="730" y="378" text-anchor="middle" font-size="12" fill="#898781">100%</text>
+
+  <!-- 理論値 48.7% -->
+  <text x="220" y="146" text-anchor="end" font-size="14" font-weight="600" fill="#0b0b0b">理論値</text>
+  <text x="220" y="162" text-anchor="end" font-size="11" fill="#52514e">統計モデル上の期待勝率</text>
+  <rect x="230" y="126" width="243" height="36" fill="#94918a" rx="3"/>
+  <text x="485" y="149" font-size="14" font-weight="700" fill="#0b0b0b">約48.7%</text>
+
+  <!-- 実際 80% -->
+  <text x="220" y="286" text-anchor="end" font-size="14" font-weight="600" fill="#0b0b0b">実際の勝率</text>
+  <text x="220" y="302" text-anchor="end" font-size="11" fill="#52514e">7勝7敗力士(千秋楽)の実績</text>
+  <rect x="230" y="266" width="400" height="36" fill="#e34948" rx="3"/>
+  <text x="642" y="289" font-size="14" font-weight="700" fill="#0b0b0b">約80%</text>
+
+  <text x="410" y="404" text-anchor="middle" font-size="12" fill="#898781">出典:Duggan &amp; Levitt, American Economic Review, Vol.92 No.5 (2002), pp.1594-1605</text>
+</svg>

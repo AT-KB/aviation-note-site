@@ -319,8 +319,10 @@
           </form>
           <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
           <p class="note">
-            Send your email and we'll add you to the closed test — one quiet message,
-            nothing else. Or write to <b>hello@torriscollection.com</b>.
+            Enter your email and tap Become a monitor — your mail app opens a short note
+            to us to add you to the closed test. Or just email
+            <a href="mailto:rokkyofarm@gmail.com?subject=Toris%20Collection%20%E2%80%94%20closed%20test">rokkyofarm@gmail.com</a>
+            directly.
           </p>
         </div>
       </div>
@@ -526,7 +528,7 @@
       <div class="meta">
         <span>© 2026 Toris Collection</span>
         <span class="dot"></span>
-        <span>hello@torriscollection.com</span>
+        <a href="mailto:rokkyofarm@gmail.com?subject=Toris%20Collection">rokkyofarm@gmail.com</a>
         <span class="dot"></span>
         <span>Made quietly, for listeners.</span>
       </div>
@@ -551,22 +553,25 @@
     els.forEach(function (e) { io.observe(e); });
   })();
 
-  // Waitlist — no backend yet: open a prefilled mail draft. Swap for a form
-  // service (Formspree / Mailchimp) by giving <form> an action + method.
+  // Signup: static site, no backend. On submit we open a prefilled mail draft to the
+  // real address. The address is ALSO shown as plain text/link above, so there is never
+  // a dead end if the device has no default mail app. (To auto-capture typed emails
+  // instead, point the form at a Google Form / Formspree endpoint.)
   (function () {
     var form = document.getElementById('waitform');
     var msg = document.getElementById('formMsg');
     if (!form) return;
+    var to = 'rokkyofarm@gmail.com';
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var email = (form.email.value || '').trim();
       var ok = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
       if (!ok) { msg.textContent = 'Please enter a valid email address.'; return; }
-      var to = 'hello@torriscollection.com';
-      var sub = encodeURIComponent('Toris Collection — waitlist');
-      var body = encodeURIComponent('Please add me to the waitlist: ' + email);
+      var sub = encodeURIComponent('Toris Collection — closed test');
+      var body = encodeURIComponent('Please add me to the closed test: ' + email);
       window.location.href = 'mailto:' + to + '?subject=' + sub + '&body=' + body;
-      msg.textContent = 'Thanks — your mail app should open. If not, email ' + to + '.';
+      msg.textContent = 'Thanks! Your mail app should open a note to ' + to +
+        '. If nothing happens, email ' + to + ' directly.';
       form.reset();
     });
   })();

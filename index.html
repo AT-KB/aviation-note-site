@@ -312,17 +312,12 @@
         </p>
 
         <div class="signup" id="waitlist">
-          <form id="waitform" novalidate>
-            <input type="email" name="email" placeholder="you@example.com"
-                   aria-label="Email address" autocomplete="email" required />
-            <button class="btn" type="submit">Become a monitor</button>
-          </form>
-          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          <a class="btn" href="https://docs.google.com/forms/d/18VdH3JVA-9JNuzToWZ4z19X7zwJbCjXKYOGkCm4MoNA/viewform"
+             target="_blank" rel="noopener">Become a monitor →</a>
           <p class="note">
-            Enter your email and tap Become a monitor — your mail app opens a short note
-            to us to add you to the closed test. Or just email
-            <a href="mailto:rokkyofarm@gmail.com?subject=Toris%20Collection%20%E2%80%94%20closed%20test">rokkyofarm@gmail.com</a>
-            directly.
+            Opens a short form (about 20 seconds). Ask us to add you to the Android
+            closed test, or just to let you know when it opens. One quiet message —
+            nothing else.
           </p>
         </div>
       </div>
@@ -528,7 +523,7 @@
       <div class="meta">
         <span>© 2026 Toris Collection</span>
         <span class="dot"></span>
-        <a href="mailto:rokkyofarm@gmail.com?subject=Toris%20Collection">rokkyofarm@gmail.com</a>
+        <a href="https://docs.google.com/forms/d/18VdH3JVA-9JNuzToWZ4z19X7zwJbCjXKYOGkCm4MoNA/viewform" target="_blank" rel="noopener">Join the closed test</a>
         <span class="dot"></span>
         <span>Made quietly, for listeners.</span>
       </div>
@@ -553,28 +548,7 @@
     els.forEach(function (e) { io.observe(e); });
   })();
 
-  // Signup: static site, no backend. On submit we open a prefilled mail draft to the
-  // real address. The address is ALSO shown as plain text/link above, so there is never
-  // a dead end if the device has no default mail app. (To auto-capture typed emails
-  // instead, point the form at a Google Form / Formspree endpoint.)
-  (function () {
-    var form = document.getElementById('waitform');
-    var msg = document.getElementById('formMsg');
-    if (!form) return;
-    var to = 'rokkyofarm@gmail.com';
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var email = (form.email.value || '').trim();
-      var ok = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
-      if (!ok) { msg.textContent = 'Please enter a valid email address.'; return; }
-      var sub = encodeURIComponent('Toris Collection — closed test');
-      var body = encodeURIComponent('Please add me to the closed test: ' + email);
-      window.location.href = 'mailto:' + to + '?subject=' + sub + '&body=' + body;
-      msg.textContent = 'Thanks! Your mail app should open a note to ' + to +
-        '. If nothing happens, email ' + to + ' directly.';
-      form.reset();
-    });
-  })();
+  // Signup is a Google Form (link), so no JS handler is needed here.
 
   // The showcase video stays muted (it's a silent screen capture). Sound lives in the
   // dedicated radio player below, so the audio is clearly "your own radio," not a stray call.
